@@ -8,6 +8,10 @@ var app = require('../app');
 var debug = require('debug')('Music_Collab:server');
 var http = require('http');
 
+//this will call all the mongoose stuff and open server but it can also be used
+//as a promise for error tracing
+var startDb = require('../db/index.js');
+
 /**
  * Get port from environment and store in Express.
  */
