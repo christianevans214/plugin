@@ -28,8 +28,12 @@ gulp.task('lintJS', function() {
 		.pipe(eslint.failOnError());
 });
 
-
-var bundler = watchify(browserify('./pre-build/javascripts/app.js', watchify.args));
+var customOpts = {
+  entries: ['./pre-build/javascripts/app.js'],
+  debug: true
+};
+var opts = assign({}, watchify.args, customOpts);
+var bundler = watchify(browserify(opts));
 bundler.transform(babelify);
 gulp.task('browserify', bundle);
 function bundle() {
