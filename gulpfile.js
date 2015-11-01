@@ -32,7 +32,7 @@ var customOpts = {
   entries: ['./pre-build/javascripts/app.js'],
   debug: true
 };
-var opts = assign({}, watchify.args, customOpts);
+var opts = Object.assign({}, watchify.args, customOpts);
 var bundler = watchify(browserify(opts));
 bundler.transform(babelify);
 gulp.task('browserify', bundle);
