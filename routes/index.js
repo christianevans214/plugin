@@ -4,7 +4,7 @@ var router = express.Router();
 var BASE_HTML_PATH = path.join(__dirname, '../views/base.html')
 /* GET home page. */
 router.all('/*', function(req, res, next) {
-  res.send("Hey This Is Working")
+  res.sendFile(BASE_HTML_PATH)
 });
 
 module.exports = router;

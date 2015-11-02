@@ -5,10 +5,12 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var watchify = require('watchify');
 var browserify = require('browserify');
-var babelify = require("babelify");
 var sass = require('gulp-sass');
 var runSeq = require("run-sequence");
 var rename = require('gulp-rename');
+var reactify = require('reactify');
+var path = require('path');
+var es6ify = require("es6ify");
 
 // Development tasks
 // ------------------------------------------------
@@ -22,28 +24,37 @@ gulp.task('reloadCSS', function() {
 });
 
 gulp.task('lintJS', function() {
-	return gulp.src(['./pre-build/javascripts/**/*.js', './routes/**/*.js'])
+	return gulp.src(['./public/javascripts/**/*.js', './routes/**/*.js'])
 		.pipe(eslint())
 		.pipe(eslint.format())
 		.pipe(eslint.failOnError());
 });
 
-var customOpts = {
-  entries: ['./pre-build/javascripts/app.js'],
-  debug: true
-};
-var opts = Object.assign({}, watchify.args, customOpts);
-var bundler = watchify(browserify(opts));
-bundler.transform(babelify);
-gulp.task('browserify', bundle);
-function bundle() {
-	var b = bundler.bundle()
-		.on('error', console.log)
+
+gulp.task('browserify', function() {
+	var customOpts = {
+		entries: ['./pre-build/javascripts/app.js'],
+		debug: true,
+		transform:[reactify, es6ify]
+	};
+	var opts = Object.assign({}, watchify.args, customOpts);
+	var bundler = browserify(opts);
+	var watcher = watchify(bundler);
+	return watcher
+		.on('update', function () {
+			var updateStart = Date.now();
+			console.log("Updating!");
+			watcher.bundle()
+				.pipe(source('bundle.js'))
+				.pipe(buffer())
+				.pipe(gulp.dest('./public/javascripts'))
+			console.log("Updated!", (Date.now() - updateStart) + "ms");
+		})
+		.bundle()
 		.pipe(source('bundle.js'))
 		.pipe(buffer())
 		.pipe(gulp.dest('./public/javascripts'))
-	return b;
-}
+})
 
 gulp.task('buildCSS', function() {
 	return gulp.src('./pre-build/stylesheets/main.scss')
@@ -63,10 +74,11 @@ gulp.task('build', function(){
 gulp.task('default', function() {
 	livereload.listen();
 	gulp.start('build');
-	bundler.on('update', bundle);
 	gulp.watch('./pre-build/stylesheets/*.scss', function() {
 		runSeq('buildCSS', 'reloadCSS');
 	});
+	gulp.watch(['./public/javascripts/**'], ['reload', 'lintJS']); 
+	gulp.watch(['./views/base.html'],['reload']);
 })
 
 
