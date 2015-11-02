@@ -1,2 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 * {
-  border: 1px solid black; }
+  margin: 0;
+  padding: 0; }
+
+.nav-container {
+  height: 80px;
+  background-color: #333;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  display: flex;
+  flex-direction: row; }
+  .nav-container .nav-flex {
+    flex-grow: 1; }
+  .nav-container .nav-center {
+    flex-grow: 3;
+    text-align: center; }
+    .nav-container .nav-center div h1 {
+      margin-top: 20px; }

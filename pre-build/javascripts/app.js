@@ -1,8 +1,13 @@
 var React = require("react");
+var Navbar = require('./Navbar');
 
 var App = React.createClass({
 	render: function(){
-		return <div>HEYYY Phew ok that works</div>
+		return (
+		<div>
+			<Navbar />
+		</div>
+		)
 	}
 });
 

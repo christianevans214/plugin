@@ -24,7 +24,9 @@
     "mongoose": "^4.2.3",
     "morgan": "~1.6.1",
     "path": "^0.12.7",
+    "react-redux": "^4.0.0",
     "reactify": "^1.1.1",
+    "redux": "^3.0.4",
     "run-sequence": "^1.1.4",
     "serve-favicon": "~2.3.0",
     "vinyl-buffer": "^1.0.0",
@@ -32,6 +34,7 @@
     "watchify": "^3.6.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "redux-devtools": "^2.1.5"
   }
 }

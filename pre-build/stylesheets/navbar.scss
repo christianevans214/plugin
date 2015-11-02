@@ -1,0 +1,18 @@
+.nav-container{
+	height: 80px;
+	background-color: #333;
+	color: white;
+	font-family: 'Amatic SC', cursive;
+	display: flex;
+	flex-direction: row;
+	.nav-flex {
+		flex-grow: 1;
+	}
+	.nav-center {
+		flex-grow: 3;
+		text-align: center;
+		div h1 {
+			margin-top: 20px;
+		}
+	}
+}
