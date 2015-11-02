@@ -11,8 +11,24 @@
 	.nav-center {
 		flex-grow: 3;
 		text-align: center;
-		div h1 {
-			margin-top: 20px;
+		.nav-center-list {
+			.nav-center-list-item {
+				display: inline-block;
+			}
+			.nav-link {
+				margin: 0 12px;
+				&:hover {
+					text-decoration: underline;
+				}
+				cursor: pointer;
+				font-size: 24px;
+			}
+			div h1 {
+				font-size: 40px;
+				margin-top: 20px;
+				cursor: default;
+			}
+
 		}
 	}
 }

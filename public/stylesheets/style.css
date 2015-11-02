@@ -15,5 +15,15 @@
   .nav-container .nav-center {
     flex-grow: 3;
     text-align: center; }
-    .nav-container .nav-center div h1 {
-      margin-top: 20px; }
+    .nav-container .nav-center .nav-center-list .nav-center-list-item {
+      display: inline-block; }
+    .nav-container .nav-center .nav-center-list .nav-link {
+      margin: 0 12px;
+      cursor: pointer;
+      font-size: 24px; }
+      .nav-container .nav-center .nav-center-list .nav-link:hover {
+        text-decoration: underline; }
+    .nav-container .nav-center .nav-center-list div h1 {
+      font-size: 40px;
+      margin-top: 20px;
+      cursor: default; }
