@@ -1,10 +1,11 @@
 .nav-container{
-	height: 80px;
+	height: $navbar-height;
 	background-color: #333;
 	color: white;
 	font-family: 'Amatic SC', cursive;
 	display: flex;
 	flex-direction: row;
+	border-bottom: 1px solid beige;
 	.nav-flex {
 		flex-grow: 1;
 	}
@@ -21,11 +22,11 @@
 					text-decoration: underline;
 				}
 				cursor: pointer;
-				font-size: 24px;
+				font-size: 20px;
 			}
 			div h1 {
+				margin: 20px 12px 0 12px;
 				font-size: 40px;
-				margin-top: 20px;
 				cursor: default;
 			}
 

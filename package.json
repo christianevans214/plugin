@@ -24,6 +24,7 @@
     "mongoose": "^4.2.3",
     "morgan": "~1.6.1",
     "path": "^0.12.7",
+    "react-addons-css-transition-group": "^0.14.1",
     "react-redux": "^4.0.0",
     "reactify": "^1.1.1",
     "redux": "^3.0.4",

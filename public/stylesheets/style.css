@@ -9,7 +9,8 @@
   color: white;
   font-family: 'Amatic SC', cursive;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  border-bottom: 1px solid beige; }
   .nav-container .nav-flex {
     flex-grow: 1; }
   .nav-container .nav-center {
@@ -20,10 +21,14 @@
     .nav-container .nav-center .nav-center-list .nav-link {
       margin: 0 12px;
       cursor: pointer;
-      font-size: 24px; }
+      font-size: 20px; }
       .nav-container .nav-center .nav-center-list .nav-link:hover {
         text-decoration: underline; }
     .nav-container .nav-center .nav-center-list div h1 {
+      margin: 20px 12px 0 12px;
       font-size: 40px;
-      margin-top: 20px;
       cursor: default; }
+
+.splash {
+  background-image: url("../images/home-page-headphones.jpg");
+  height: calc(100vh - 80px); }
