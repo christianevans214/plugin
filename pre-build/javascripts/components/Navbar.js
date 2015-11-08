@@ -1,5 +1,6 @@
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 var React = require('react');
+var Link = require('react-router').Link
 
 //need to refactor this
 var Navbar = React.createClass({

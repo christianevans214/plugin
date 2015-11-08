@@ -33,7 +33,7 @@ gulp.task('lintJS', function() {
 
 gulp.task('browserify', function() {
 	var customOpts = {
-		entries: ['./pre-build/javascripts/app.js'],
+		entries: ['./pre-build/javascripts/main.js'],
 		debug: true,
 		transform:[reactify, es6ify]
 	};
