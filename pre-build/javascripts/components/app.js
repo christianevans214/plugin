@@ -1,5 +1,5 @@
 var React = require("react");
-var Navbar = require('./Navbar');
+var Navbar = require('./Navbar/Navbar');
 // var Splash = require('./Splash');
 var Router = require('react-router');
 var RouteHandler = require('react-router').RouteHandler

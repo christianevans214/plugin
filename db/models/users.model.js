@@ -6,6 +6,7 @@ var schema = new mongoose.Schema({
 	lastName: String,
 	password: String,
 	salt: String,
+	email: String,
 	playlists:[{ type: mongoose.Schema.Types.ObjectId, ref: "Playlist" }]
 })
 
@@ -22,17 +23,18 @@ var encryptPassword = function(plainText, salt){
 	return hash.digest('hex');
 };
 
+schema.statics.generateSalt = generateSalt;
+schema.statics.encryptPassword = encryptPassword;
+
 schema.pre('save', function(next){
 	if (this.isModified('password')){
-		this.salt = this.constructor.generateSalt();
-		this.password = this.constructor.encryptPassword(this.password, this.salt);
+		this.salt = generateSalt();
+		this.password = encryptPassword(this.password, this.salt);
 	}
 
 	next();
 });
 
-schema.statics.generateSalt = generateSalt;
-schema.statics.encryptPassword = encryptPassword;
 
 schema.method('correctPassword', function(candidatePassword) {
     return encryptPassword(candidatePassword, this.salt) === this.password;

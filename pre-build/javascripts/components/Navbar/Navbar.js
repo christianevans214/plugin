@@ -13,12 +13,12 @@ var Navbar = React.createClass({
 						<li key ="Discover" className = "nav-center-list-item nav-link">Discover</li>
 						<li key ="Account" className = "nav-center-list-item nav-link">Account</li>
 						<li className = "nav-center-list-item">
-							<div className = "nav-logo">
+							<Link to="/"><div className = "nav-logo">
 								<h1>Plug In</h1>
-							</div>
+							</div></Link>
 						</li>
-						<li key ="About" className = "nav-center-list-item nav-link">About</li>
-						<li key ="Contact" className = "nav-center-list-item nav-link">Contact</li>
+						<li key ="About" className = "nav-center-list-item nav-link"><Link to="/about">About</Link></li>
+						<li key ="Signup" className = "nav-center-list-item nav-link"><Link to="/sign-up">Sign up</Link></li>
 					</ul>
 				</div>
 				<div className = "nav-flex nav-float-right nav-link"></div>

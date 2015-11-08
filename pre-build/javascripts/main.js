@@ -1,7 +1,8 @@
 var React = require('react');
 
 var App = require('./components/app');
-var Splash = require('./components/Splash');
+var Splash = require('./components/Splash/Splash');
+var About = require('./components/About/About');
 
 var Router = require('react-router');
 var Link = Router.Link;
@@ -12,6 +13,7 @@ var DefaultRoute = Router.DefaultRoute;
 var routes = (
 	<Route path = "/" handler={App}>
 		<Route name = "/" handler = {Splash} />
+		<Route name ="/about" handler = {About} />
 	</Route>
 )
 

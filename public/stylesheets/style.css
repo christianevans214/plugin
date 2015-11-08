@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0; }
 
+.app-body {
+  position: absolute;
+  top: 80px; }
+
 .nav-container {
   height: 80px;
   background-color: black;
@@ -22,6 +26,9 @@
     .nav-container .nav-center .nav-center-list .nav-center-list-item {
       opacity: 1;
       display: inline-block; }
+      .nav-container .nav-center .nav-center-list .nav-center-list-item a {
+        text-decoration: none;
+        color: white; }
     .nav-container .nav-center .nav-center-list .nav-link {
       opacity: 1;
       margin: 0 12px;
@@ -33,7 +40,7 @@
       opacity: 1;
       margin: 20px 12px 0 12px;
       font-size: 44px;
-      cursor: default; }
+      cursor: pointer; }
 
 .splash {
   background-image: url("../images/home-page-headphones.jpg");
