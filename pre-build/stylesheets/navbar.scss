@@ -1,6 +1,10 @@
 .nav-container{
 	height: $navbar-height;
-	background-color: #333;
+	background-color: black;
+	opacity: .8;
+	position: absolute;
+	width: 100%;
+	
 	color: white;
 	font-family: 'Amatic SC', cursive;
 	display: flex;
@@ -14,19 +18,22 @@
 		text-align: center;
 		.nav-center-list {
 			.nav-center-list-item {
+				opacity: 1;
 				display: inline-block;
 			}
 			.nav-link {
+				opacity: 1;
 				margin: 0 12px;
 				&:hover {
 					text-decoration: underline;
 				}
 				cursor: pointer;
-				font-size: 20px;
+				font-size: 23px;
 			}
 			div h1 {
+				opacity: 1;
 				margin: 20px 12px 0 12px;
-				font-size: 40px;
+				font-size: 44px;
 				cursor: default;
 			}
 

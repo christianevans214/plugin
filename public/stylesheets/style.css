@@ -5,7 +5,10 @@
 
 .nav-container {
   height: 80px;
-  background-color: #333;
+  background-color: black;
+  opacity: .8;
+  position: absolute;
+  width: 100%;
   color: white;
   font-family: 'Amatic SC', cursive;
   display: flex;
@@ -17,18 +20,21 @@
     flex-grow: 3;
     text-align: center; }
     .nav-container .nav-center .nav-center-list .nav-center-list-item {
+      opacity: 1;
       display: inline-block; }
     .nav-container .nav-center .nav-center-list .nav-link {
+      opacity: 1;
       margin: 0 12px;
       cursor: pointer;
-      font-size: 20px; }
+      font-size: 23px; }
       .nav-container .nav-center .nav-center-list .nav-link:hover {
         text-decoration: underline; }
     .nav-container .nav-center .nav-center-list div h1 {
+      opacity: 1;
       margin: 20px 12px 0 12px;
-      font-size: 40px;
+      font-size: 44px;
       cursor: default; }
 
 .splash {
   background-image: url("../images/home-page-headphones.jpg");
-  height: calc(100vh - 80px); }
+  height: 100vh; }
