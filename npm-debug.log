@@ -1,0 +1,225 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/4.2.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'redux-thunk' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /Users/christianevans/Documents/Code/2015/October/Music_Collab/package.json
+5 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/axios/package.json
+6 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/bluebird/package.json
+7 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/body-parser/package.json
+8 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/browserify/package.json
+9 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/chalk/package.json
+10 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/cookie-parser/package.json
+11 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/crypto/package.json
+12 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/debug/package.json
+13 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/es6ify/package.json
+14 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/express/package.json
+15 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/express-session/package.json
+16 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/gulp/package.json
+17 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/gulp-eslint/package.json
+18 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/gulp-livereload/package.json
+19 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/gulp-rename/package.json
+20 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/gulp-sass/package.json
+21 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/immutable/package.json
+22 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/lodash/package.json
+23 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/mongoose/package.json
+24 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/morgan/package.json
+25 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/path/package.json
+26 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/react/package.json
+27 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/react-addons-css-transition-group/package.json
+28 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/react-dom/package.json
+29 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/react-redux/package.json
+30 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/react-router/package.json
+31 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/reactify/package.json
+32 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux/package.json
+33 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-devtools/package.json
+34 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/run-sequence/package.json
+35 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/serve-favicon/package.json
+36 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/vinyl-buffer/package.json
+37 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/vinyl-source-stream/package.json
+38 verbose installManyTop reading scoped package data from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/watchify/package.json
+39 info package.json gulp-rename@1.2.2 No license field.
+40 info package.json path@0.12.7 path is also the name of a node core module.
+41 info package.json crypto@0.0.3 crypto is also the name of a node core module.
+42 info package.json crypto@0.0.3 No license field.
+43 info package.json react-addons-css-transition-group@0.14.1 No repository field.
+44 verbose readDependencies loading dependencies from /Users/christianevans/Documents/Code/2015/October/Music_Collab/package.json
+45 silly cache add args [ 'redux-thunk', null ]
+46 verbose cache add spec redux-thunk
+47 silly cache add parsed spec Result {
+47 silly cache add   raw: 'redux-thunk',
+47 silly cache add   scope: null,
+47 silly cache add   name: 'redux-thunk',
+47 silly cache add   rawSpec: '',
+47 silly cache add   spec: '*',
+47 silly cache add   type: 'range' }
+48 silly addNamed redux-thunk@*
+49 verbose addNamed "*" is a valid semver range for redux-thunk
+50 silly addNameRange { name: 'redux-thunk', range: '*', hasData: false }
+51 silly mapToRegistry name redux-thunk
+52 silly mapToRegistry using default registry
+53 silly mapToRegistry registry https://registry.npmjs.org/
+54 silly mapToRegistry uri https://registry.npmjs.org/redux-thunk
+55 verbose addNameRange registry:https://registry.npmjs.org/redux-thunk not in flight; fetching
+56 verbose request uri https://registry.npmjs.org/redux-thunk
+57 verbose request no auth needed
+58 info attempt registry request try #1 at 12:41:23 PM
+59 verbose request id c9ca7adf33823c11
+60 verbose etag "DDPSECQNGH6YRCMV15NW0JABH"
+61 http request GET https://registry.npmjs.org/redux-thunk
+62 http 200 https://registry.npmjs.org/redux-thunk
+63 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+63 verbose headers   etag: '"3ZAASXKWHNWS36VH1WQUWURGO"',
+63 verbose headers   'content-type': 'application/json',
+63 verbose headers   'cache-control': 'max-age=60',
+63 verbose headers   'content-length': '10005',
+63 verbose headers   'accept-ranges': 'bytes',
+63 verbose headers   date: 'Sun, 06 Dec 2015 20:40:54 GMT',
+63 verbose headers   via: '1.1 varnish',
+63 verbose headers   age: '0',
+63 verbose headers   connection: 'keep-alive',
+63 verbose headers   'x-served-by': 'cache-sjc3125-SJC',
+63 verbose headers   'x-cache': 'HIT',
+63 verbose headers   'x-cache-hits': '1',
+63 verbose headers   'x-timer': 'S1449434454.354989,VS0,VE84',
+63 verbose headers   vary: 'Accept' }
+64 silly get cb [ 200,
+64 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+64 silly get     etag: '"3ZAASXKWHNWS36VH1WQUWURGO"',
+64 silly get     'content-type': 'application/json',
+64 silly get     'cache-control': 'max-age=60',
+64 silly get     'content-length': '10005',
+64 silly get     'accept-ranges': 'bytes',
+64 silly get     date: 'Sun, 06 Dec 2015 20:40:54 GMT',
+64 silly get     via: '1.1 varnish',
+64 silly get     age: '0',
+64 silly get     connection: 'keep-alive',
+64 silly get     'x-served-by': 'cache-sjc3125-SJC',
+64 silly get     'x-cache': 'HIT',
+64 silly get     'x-cache-hits': '1',
+64 silly get     'x-timer': 'S1449434454.354989,VS0,VE84',
+64 silly get     vary: 'Accept' } ]
+65 verbose get saving redux-thunk to /Users/christianevans/.npm/registry.npmjs.org/redux-thunk/.cache.json
+66 silly addNameRange number 2 { name: 'redux-thunk', range: '*', hasData: true }
+67 silly addNameRange versions [ 'redux-thunk', [ '0.1.0', '1.0.0' ] ]
+68 silly addNamed redux-thunk@1.0.0
+69 verbose addNamed "1.0.0" is a plain semver version for redux-thunk
+70 silly mapToRegistry name redux-thunk
+71 silly mapToRegistry using default registry
+72 silly mapToRegistry registry https://registry.npmjs.org/
+73 silly mapToRegistry uri https://registry.npmjs.org/redux-thunk
+74 verbose addRemoteTarball https://registry.npmjs.org/redux-thunk/-/redux-thunk-1.0.0.tgz not in flight; adding
+75 verbose addRemoteTarball [ 'https://registry.npmjs.org/redux-thunk/-/redux-thunk-1.0.0.tgz',
+75 verbose addRemoteTarball   'e35544a10fcd9c9e3ba96083ac16c702394f4009' ]
+76 info retry fetch attempt 1 at 12:41:24 PM
+77 info attempt registry request try #1 at 12:41:24 PM
+78 http fetch GET https://registry.npmjs.org/redux-thunk/-/redux-thunk-1.0.0.tgz
+79 http fetch 200 https://registry.npmjs.org/redux-thunk/-/redux-thunk-1.0.0.tgz
+80 silly fetchAndShaCheck shasum e35544a10fcd9c9e3ba96083ac16c702394f4009
+81 verbose addTmpTarball /var/folders/rm/cbs9gkbd2cx2x3jg4w8rg9_400_kln/T/npm-20964-0f79a7c4/registry.npmjs.org/redux-thunk/-/redux-thunk-1.0.0.tgz not in flight; adding
+82 verbose addTmpTarball already have metadata; skipping unpack for redux-thunk@1.0.0
+83 silly cache afterAdd redux-thunk@1.0.0
+84 verbose afterAdd /Users/christianevans/.npm/redux-thunk/1.0.0/package/package.json not in flight; writing
+85 verbose afterAdd /Users/christianevans/.npm/redux-thunk/1.0.0/package/package.json written
+86 silly install resolved [ { name: 'redux-thunk',
+86 silly install resolved     version: '1.0.0',
+86 silly install resolved     description: 'Thunk middleware for Redux.',
+86 silly install resolved     main: 'lib/index.js',
+86 silly install resolved     scripts:
+86 silly install resolved      { prepublish: 'rimraf lib && babel src --out-dir lib',
+86 silly install resolved        test: 'mocha --compilers js:babel/register --reporter spec test/*.js' },
+86 silly install resolved     repository:
+86 silly install resolved      { type: 'git',
+86 silly install resolved        url: 'https://github.com/gaearon/redux-thunk.git' },
+86 silly install resolved     homepage: 'https://github.com/gaearon/redux-thunk',
+86 silly install resolved     keywords: [ 'redux', 'thunk', 'middleware', 'redux-middleware', 'flux' ],
+86 silly install resolved     author: { name: 'Dan Abramov', email: 'dan.abramov@me.com' },
+86 silly install resolved     license: 'MIT',
+86 silly install resolved     devDependencies:
+86 silly install resolved      { babel: '^5.6.14',
+86 silly install resolved        'babel-core': '^5.6.15',
+86 silly install resolved        'babel-eslint': '^3.1.20',
+86 silly install resolved        chai: '^3.2.0',
+86 silly install resolved        eslint: '^0.24.0',
+86 silly install resolved        'eslint-config-airbnb': '0.0.6',
+86 silly install resolved        mocha: '^2.2.5',
+86 silly install resolved        rimraf: '^2.4.3' },
+86 silly install resolved     gitHead: '2240b0b389249f6e2ecd1b5385c1dd85ef812c73',
+86 silly install resolved     bugs: { url: 'https://github.com/gaearon/redux-thunk/issues' },
+86 silly install resolved     _id: 'redux-thunk@1.0.0',
+86 silly install resolved     _shasum: 'e35544a10fcd9c9e3ba96083ac16c702394f4009',
+86 silly install resolved     _from: 'redux-thunk@*',
+86 silly install resolved     _npmVersion: '2.11.0',
+86 silly install resolved     _nodeVersion: '2.2.1',
+86 silly install resolved     _npmUser: { name: 'gaearon', email: 'dan.abramov@gmail.com' },
+86 silly install resolved     dist:
+86 silly install resolved      { shasum: 'e35544a10fcd9c9e3ba96083ac16c702394f4009',
+86 silly install resolved        tarball: 'http://registry.npmjs.org/redux-thunk/-/redux-thunk-1.0.0.tgz' },
+86 silly install resolved     maintainers: [ [Object] ],
+86 silly install resolved     directories: {},
+86 silly install resolved     _resolved: 'https://registry.npmjs.org/redux-thunk/-/redux-thunk-1.0.0.tgz' } ]
+87 info install redux-thunk@1.0.0 into /Users/christianevans/Documents/Code/2015/October/Music_Collab
+88 info installOne redux-thunk@1.0.0
+89 verbose installOne of redux-thunk to /Users/christianevans/Documents/Code/2015/October/Music_Collab not in flight; installing
+90 verbose lock using /Users/christianevans/.npm/_locks/redux-thunk-2dfcd200c8038fe0.lock for /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk
+91 silly install write writing redux-thunk 1.0.0 to /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk
+92 verbose unbuild node_modules/redux-thunk
+93 silly gentlyRm /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk is being purged from base /Users/christianevans/Documents/Code/2015/October/Music_Collab
+94 verbose gentlyRm don't care about contents; nuking /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk
+95 verbose tar unpack /Users/christianevans/.npm/redux-thunk/1.0.0/package.tgz
+96 verbose tar unpacking to /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk
+97 silly gentlyRm /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk is being purged
+98 verbose gentlyRm don't care about contents; nuking /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk
+99 silly gunzTarPerm modes [ '755', '644' ]
+100 silly gunzTarPerm extractEntry package.json
+101 silly gunzTarPerm extractEntry .npmignore
+102 silly gunzTarPerm extractEntry README.md
+103 silly gunzTarPerm extractEntry LICENSE.md
+104 silly gunzTarPerm extractEntry .travis.yml
+105 silly gunzTarPerm extractEntry .babelrc
+106 silly gunzTarPerm extractEntry .editorconfig
+107 silly gunzTarPerm extractEntry lib/index.js
+108 silly gunzTarPerm extractEntry .eslintrc
+109 silly gunzTarPerm extractEntry test/index.js
+110 verbose write writing to /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk/package.json
+111 info preinstall redux-thunk@1.0.0
+112 verbose readDependencies loading dependencies from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk/package.json
+113 verbose readDependencies loading dependencies from /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk/package.json
+114 silly install resolved []
+115 verbose about to build /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk
+116 info build /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk
+117 info linkStuff redux-thunk@1.0.0
+118 silly linkStuff redux-thunk@1.0.0 has /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules as its parent node_modules
+119 verbose linkBins redux-thunk@1.0.0
+120 verbose linkMans redux-thunk@1.0.0
+121 verbose rebuildBundles redux-thunk@1.0.0
+122 info install redux-thunk@1.0.0
+123 info postinstall redux-thunk@1.0.0
+124 verbose unlock done using /Users/christianevans/.npm/_locks/redux-thunk-2dfcd200c8038fe0.lock for /Users/christianevans/Documents/Code/2015/October/Music_Collab/node_modules/redux-thunk
+125 verbose validateInstall loading /Users/christianevans/Documents/Code/2015/October/Music_Collab/package.json for validation
+126 verbose stack Error: The package react@0.14.1 does not satisfy its siblings' peerDependencies requirements!
+126 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+126 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+126 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+126 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+126 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+126 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+126 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+126 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+126 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+126 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+127 verbose cwd /Users/christianevans/Documents/Code/2015/October/Music_Collab
+128 error Darwin 14.5.0
+129 error argv "/usr/local/Cellar/node/4.2.1/bin/node" "/usr/local/bin/npm" "install" "--save" "redux-thunk"
+130 error node v4.2.1
+131 error npm  v2.14.7
+132 error code EPEERINVALID
+133 error peerinvalid The package react@0.14.1 does not satisfy its siblings' peerDependencies requirements!
+133 error peerinvalid Peer react-addons-css-transition-group@0.14.1 wants react@^0.14.1
+133 error peerinvalid Peer react-redux@4.0.0 wants react@^0.14.0
+133 error peerinvalid Peer react-router@0.13.5 wants react@0.13.x||0.14.x
+133 error peerinvalid Peer react-dom@0.14.3 wants react@^0.14.3
+134 verbose exit [ 1, true ]

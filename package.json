@@ -20,7 +20,7 @@
     "gulp-eslint": "^1.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
-    "jade": "~1.11.0",
+    "immutable": "^3.7.5",
     "lodash": "^3.10.1",
     "mongoose": "^4.2.3",
     "morgan": "~1.6.1",

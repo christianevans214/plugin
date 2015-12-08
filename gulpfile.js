@@ -11,6 +11,7 @@ var rename = require('gulp-rename');
 var reactify = require('reactify');
 var path = require('path');
 var es6ify = require("es6ify");
+var chalk = require('chalk');
 
 // Development tasks
 // ------------------------------------------------
@@ -45,6 +46,10 @@ gulp.task('browserify', function() {
 			var updateStart = Date.now();
 			console.log("Updating!");
 			watcher.bundle()
+				.on('error', function (err) {
+				  console.log(chalk.red(err.toString()));
+				  this.emit('end');
+				})
 				.pipe(source('bundle.js'))
 				.pipe(buffer())
 				.pipe(gulp.dest('./public/javascripts'))

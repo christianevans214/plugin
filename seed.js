@@ -3,6 +3,7 @@ var chalk = require('chalk');
 var Promise = require('bluebird');
 var connectToDb = require('./db/index');
 var User = Promise.promisifyAll(mongoose.model('User'));
+console.log(mongoose.model('User'));
 var Playlist = Promise.promisifyAll(mongoose.model('Playlist'));
 var Song = Promise.promisifyAll(mongoose.model('Song'));
 

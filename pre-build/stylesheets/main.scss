@@ -10,10 +10,14 @@
 .app-body {
 	position: absolute;
 	top: 80px;
+	width: 100%;
+	height: calc(100vh - 80px);
+	background-color: #eee;
 }
 
 @import 'defs';
 @import 'navbar';
 @import 'home';
 @import 'about';
+@import 'login';
 

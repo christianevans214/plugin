@@ -5,6 +5,7 @@ var Link = require('react-router').Link
 //need to refactor this
 var Navbar = React.createClass({
 	render: function() {
+		//have an if statement to check if user is logged in. If so, show Account, if not show Login.
 		return (
 			<div className = "nav-container">
 				<div className = "nav-flex nav-float-left"></div>
@@ -17,8 +18,7 @@ var Navbar = React.createClass({
 								<h1>Plug In</h1>
 							</div></Link>
 						</li>
-						<li key ="About" className = "nav-center-list-item nav-link"><Link to="/about">About</Link></li>
-						<li key ="Signup" className = "nav-center-list-item nav-link"><Link to="/sign-up">Sign up</Link></li>
+						<li key ="Login" className = "nav-center-list-item nav-link"><Link to="/login">Login</Link></li>
 					</ul>
 				</div>
 				<div className = "nav-flex nav-float-right nav-link"></div>

@@ -10,8 +10,7 @@ var schema = new mongoose.Schema({
 	playlists:[{ type: mongoose.Schema.Types.ObjectId, ref: "Playlist" }]
 })
 
-mongoose.model("User", schema);
-
+// mongoose.model("User", schema);
 var generateSalt = function(){
 	return crypto.randomBytes(16).toString('base64');
 };
