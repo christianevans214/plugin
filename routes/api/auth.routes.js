@@ -5,6 +5,7 @@ var session = require('express-session');
 
 module.exports = router;
 
+
 router.post('/login', function(req, res, next){
 	User.findOne({email: req.body.email})
 		.then(function(user){
@@ -13,10 +14,25 @@ router.post('/login', function(req, res, next){
 				res.send(Object.assign(user, {password: "", salt: ""}));
 			}
 			else {
-				return next(err);
+				return next(new Error('credentials incorrect!'));
 			}
 		})
 		.then(null, function(err){
-			return next(err);
+			return next(new Error('credentials incorrect!'));
+		});
+});
+router.get('/user', function(req, res, next){
+	User.findById(req.session.userId).exec()
+		.then(function(user){
+			if(!user) res.status(400).send('user not found');
+			else {
+				res.send({email: user.email,
+					  firstName: user.firstName,
+					  lastName: user.lastName
+					 });
+			}
+		})
+		.then(null, function(err){
+			next(err);
 		});
 });

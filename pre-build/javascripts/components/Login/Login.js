@@ -1,6 +1,6 @@
 var React = require('react');
 var store = require('../../store/index.js');
-var sessionActions = require("../../actions/session.actions.js");
+var { login } = require("../../actions/session.actions.js");
 
 var Login = React.createClass({
 	attemptLogin: function() {
@@ -10,11 +10,7 @@ var Login = React.createClass({
 		 }
 		 this.refs.email.value = "";
 		 this.refs.password.value = "";
-
-		 store.dispatch(sessionActions.login(credentials))
-		 	.then(function(){
-		 		console.log('can chain off of stores!');
-		 	})
+		 store.dispatch(login(credentials))
 	},
 	render: function () {
 		return (

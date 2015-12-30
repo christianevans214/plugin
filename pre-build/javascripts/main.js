@@ -7,10 +7,7 @@ var About = require('./components/About/About');
 var Login = require('./components/Login/Login');
 
 var Router = require('react-router');
-var Renderer = Router.Router;
-var Route = Router.Route;
-var RouteHandler = Router.RouteHandler;
-var DefaultRoute = Router.DefaultRoute;
+var { Route, RouteHandler, DefaultRoute } = Router;
 
 var routes = (
 	<Route path = "/" handler={App}>
