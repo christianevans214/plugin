@@ -10,6 +10,10 @@
   height: calc(100vh - 80px);
   background-color: #eee; }
 
+button {
+  outline: none;
+  text-decoration: none; }
+
 .nav-container {
   height: 80px;
   background-color: black;
@@ -37,6 +41,16 @@
       margin: 0 12px;
       cursor: pointer;
       font-size: 23px; }
+      .nav-container .nav-center .nav-center-list .nav-link button {
+        font-size: 23px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Amatic SC', cursive;
+        background-color: black;
+        border: none;
+        cursor: pointer; }
+        .nav-container .nav-center .nav-center-list .nav-link button:hover {
+          text-decoration: underline; }
       .nav-container .nav-center .nav-center-list .nav-link:hover {
         text-decoration: underline; }
     .nav-container .nav-center .nav-center-list div h1 {

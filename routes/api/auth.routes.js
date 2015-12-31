@@ -5,6 +5,10 @@ var session = require('express-session');
 
 module.exports = router;
 
+router.get('/logout', function(req,res,next){
+	req.session.userId = null;
+	res.status(200).end();
+})
 
 router.post('/login', function(req, res, next){
 	User.findOne({email: req.body.email})

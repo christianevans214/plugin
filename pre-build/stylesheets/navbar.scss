@@ -26,6 +26,18 @@
 				}
 			}
 			.nav-link {
+				button {
+					font-size:23px;
+					color: white;
+					text-decoration: none;	
+					font-family: 'Amatic SC', cursive;
+					background-color: black;
+					border: none;
+					cursor: pointer;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
 				opacity: 1;
 				margin: 0 12px;
 				&:hover {

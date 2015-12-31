@@ -39,12 +39,12 @@ const loginSuccessful = function(user){
 	}
 };
 
-
 /*
 **************
 *~Middleware~*
 **************
 */
+
 const login = function(credentials) {
 	return function(dispatch){
 		return axios.post('api/auth/login', credentials)
@@ -55,26 +55,40 @@ const login = function(credentials) {
 				console.log(response)
 				return store.dispatch(throwErr(response));
 			});
-	}
+	};
+};
+
+const logout = function() {
+	return function(dispatch){
+		return axios.get('api/auth/logout')
+			.then(response => {
+				return store.dispatch(logoutUser());
+			})
+			.catch(response => {
+				return store.dispatch(throwErr(response));
+			});
+	};
 };
 
 const getUser = function(){
 	return function(dispact){
-		return axios.get('/auth/user')
+		return axios.get('api/auth/user')
 			.then(response => {
 				store.dispatch(returnUser(response.data));
 			})
 			.catch(response => {
-				console.log(response)
 				return store.dispatch(throwErr(response));
-			})
-	}
-}
+			});
+	};
+};
 
 
 
 module.exports = { 
 	logoutUser, 
 	loginSuccessful,
-	login
+	login,
+	getUser,
+	returnUser,
+	logout
 }

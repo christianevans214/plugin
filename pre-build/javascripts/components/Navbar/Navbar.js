@@ -1,30 +1,56 @@
-var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
-var React = require('react');
-var Link = require('react-router').Link
+// var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+const React = require('react');
+const { Link } = require('react-router');
+const { connect } = require('react-redux');
+const { logout } = require('../../actions/session.actions.js');
 
 //need to refactor this
-var Navbar = React.createClass({
+const Navbar = React.createClass({
+	loginStatus: function(){
+		const { dispatch, loggedIn, user } = this.props;
+		if (loggedIn) {
+			return (
+				<button onClick={()=>{dispatch(logout())}}>
+					Logout
+				</button>
+				)
+		}
+		else {
+			return(
+				<Link to='/login'>
+					Login
+				</Link>
+				)
+		}
+	},
 	render: function() {
-		//have an if statement to check if user is logged in. If so, show Account, if not show Login.
+		const { dispatch, loggedIn, user } = this.props;
+		var accountBtn = loggedIn ? <li key ="Account" className = "nav-center-list-item nav-link">Account</li> : null
 		return (
 			<div className = "nav-container">
 				<div className = "nav-flex nav-float-left"></div>
 				<div className = "nav-flex nav-center">
 					<ul className ="nav-center-list">
 						<li key ="Discover" className = "nav-center-list-item nav-link">Discover</li>
-						<li key ="Account" className = "nav-center-list-item nav-link">Account</li>
 						<li className = "nav-center-list-item">
 							<Link to="/"><div className = "nav-logo">
 								<h1>Plug In</h1>
 							</div></Link>
 						</li>
-						<li key ="Login" className = "nav-center-list-item nav-link"><Link to="/login">Login</Link></li>
+						{accountBtn}
+						<li key ="Login" className = "nav-center-list-item nav-link">
+							{this.loginStatus()}
+						</li>
 					</ul>
 				</div>
 				<div className = "nav-flex nav-float-right nav-link"></div>
 			</div>
-			)
-	}
-})
+			);
+		}
+});
 
-module.exports = Navbar;
+function select(state){
+	return state.sessionReducer
+}
+
+module.exports = connect(select)(Navbar);

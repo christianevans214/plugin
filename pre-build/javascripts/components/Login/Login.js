@@ -1,16 +1,18 @@
 var React = require('react');
-var store = require('../../store/index.js');
+// var store = require('../../store/index.js');
 var { login } = require("../../actions/session.actions.js");
+var { connect } = require('react-redux');
 
 var Login = React.createClass({
 	attemptLogin: function() {
+		const {dispatch} = this.props;
 		var credentials = {
 			email: this.refs.email.value,
 			password: this.refs.password.value
 		 }
 		 this.refs.email.value = "";
 		 this.refs.password.value = "";
-		 store.dispatch(login(credentials))
+		 dispatch(login(credentials))
 	},
 	render: function () {
 		return (
@@ -33,4 +35,8 @@ var Login = React.createClass({
 	}
 });
 
-module.exports = Login;
+
+function select(state){
+	return state.sessionReducer;
+}
+module.exports = connect(select)(Login);

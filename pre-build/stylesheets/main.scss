@@ -15,6 +15,11 @@
 	background-color: #eee;
 }
 
+button {
+	outline: none;
+	text-decoration: none;
+}
+
 @import 'defs';
 @import 'navbar';
 @import 'home';
